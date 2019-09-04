@@ -1,7 +1,7 @@
 import urllib.request as urllib2
 import json
 import pymysql
-db = pymysql.connect("localhost", "root", "205814", "travel")
+db = pymysql.connect("localhost", "root", ***, "travel")   # ***means password of your MySQL Database
 cursor = db.cursor()
 # 创建数据表SQL语句
 cursor.execute("DROP TABLE IF EXISTS travel.xianYouji")
