@@ -10,7 +10,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134'
 }
 pattern = re.compile(r'\d+')
-db = pymysql.connect("localhost", "root", "205814", "travel")
+db = pymysql.connect("localhost", "root", ***, "travel")   # ***means password of your MySQL Database
 cursor = db.cursor()
 # 创建数据表SQL语句
 cursor.execute("DROP TABLE IF EXISTS travel.xianViewQunar")
